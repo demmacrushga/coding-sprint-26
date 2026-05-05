@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Portfolio Website</title>
-    <link rel="stylesheet" href="styles.css"
 
     <!-- 2. Google Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +15,7 @@
 
     <!-- 4. Your Styles (Always Last) -->
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9624737e09.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
@@ -31,7 +31,7 @@
             </ul>
         </nav>
         <div class="header-text">
-            <p>Full Stack Developer</p>
+            <p>Full Stack Software Engineer</p>
             <h1>
                 Hi, I am <span>Edith</span> From Ghana
             </h1>
@@ -47,13 +47,13 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>"I’m a developer who believes that code should be as harmonious as a well-tuned guitar.
+                <p>I’m a full stack developer who believes that code should be as harmonious as a well-tuned guitar.
                     As a Computer Science student at KNUST and an avid electric guitar player,
                     I bring a mix of technical discipline and creative flair to every project I touch.
                     From learning Object-Oriented Programming to crafting modern web layouts,
                     I love the challenge of turning complex problems into elegant solutions.
                     When I’m not debugging Javascript or refining CSS, you can find me exploring the latest in the tech field 
-                    or practicing on my Fender Squier.
+                    or practicing on my Fender Squier guitar.
                 </p>
 
                 <div class="tab-titles">
@@ -62,21 +62,21 @@
                     <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
 
-                <div class="tab-contents active-tab">
+                <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Full Stack Developer</span><br>Designing Websites and Applications</li>
+                        <li><span>Full Stack Mobile App/Website Developer</span><br>Designing Websites and Applications</li>
                         <li><span>Lead Guitarist</span><br>Playing songs for entertainment</li>
                         <li><span>Social media creator</span><br>Creating content and engaging followers</li>
                     </ul>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>2025 - Current</span><br>Self-taught</li>
-                        <li><span>2025 - Currrent</span><br>Lead at CUC Church Choir</li>
-                        <li><span>2023 - Current</span><br>Snapchat</li>
+                        <li><span>2025 - Current</span><br>Self-taught full stack developer</li>
+                        <li><span>2025 - Currrent</span><br>Lead guitarist at CUC Church Choir</li>
+                        <li><span>2023 - Current</span><br>Creator at Snapchat</li>
                     </ul>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents" id="education">
                     <ul>
                         <li><span>2019</span><br>Prince and Princess Academy</li>
                         <li><span>2022</span><br>Archbishop Porter Girls' Secondary School</li>
@@ -87,6 +87,95 @@
         </div>    
     </div>
 </div>
+<!-- ------------services------------ -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Full-Stack Software Engineer</h2>
+                <p>Building high-performance, cross-platform applications 
+                   with robust backends and seamless UI/UX
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-guitar"></i>
+                <h2>Session Musician</h2>
+                <p>
+                    Providing studio-grade lead and bass guitar for professional musical projects.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-snapchat"></i>
+                <h2>Digital Growth Strategist</h2>
+                <p>
+                    Scaling brands through data-driven advertising
+                    and strategic social management.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+ </div>
+
+ <!-- ---------portfolio-------------- -->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Gemini_Generated_Image_1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+                <div class="layer">
+                    <h3>Growth Strategy Work</h3>
+                    <p>Boosted brand reach 120% through data-driven advertising
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+                <div class="layer">
+                    <h3>Musical Work</h3>
+                    <p>Recorded professional lead and bass guitar for studio projects.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/gemini image 2.jpg">
+            </div>
+            <div class="work">
+                <img src="images/gemini image 3.jpg">
+            </div>
+        </div>
+    </div>
+  </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
     
 </body>
 </html>
