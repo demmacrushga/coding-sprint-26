@@ -3,7 +3,7 @@
 //string, numbers, boolean, null, undefined
 //Arrays are variables that hols multiple values 
 
-const name = 'John';
+/*const name = 'John';
 const age = 30;
 const isCool = true;
 const rating = 4.5;
@@ -64,3 +64,52 @@ const todoCompleted = todos.filter(function(todo) {
 console.log(todoCompleted) 
 
 
+const x = 11; 
+
+const color = x > 10 ? 'red' : 'blue';
+
+switch(color) {
+    case 'red':
+        console.log('color is red');
+        break;
+    case 'blue':
+        console.log('color is blue');
+        break;
+    default:
+        console.log('color is neither red or blue')
+}
+
+
+function addNums(num1, num2){
+    return(num1 + num2);
+}
+
+console.log(addNums(5,4));
+//OR you can use 
+
+function addNum(num3=3, num4=6) {
+    return(num3 + num4);
+}
+console.log(addNum); */
+
+//Constructor function 
+function Person(firstname, lastname, dob) {
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.dob = dob;
+    this.getBirthYear = function(){
+        return this.dob.getFullYear();
+    }
+    this.getFullName = function() {
+        return `${this.firstname} ${this.lastname}`;
+    }
+}
+
+//Instantiate object 
+const person1 = new Person('Jane', 'Doe', '4-3-1980');
+const person2 = new Person('Kurt', 'Weller', '3-4-1990')
+
+console.log(person1);
+console.log(person2.firstname);
+console.log(person1.getFullName);
+console.log(person1.getBirthYear);
