@@ -22,13 +22,15 @@
     <div class="container">
         <nav>
             <img src="images/46543913-designstyle-birthday-m.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Full Stack Software Engineer</p>
@@ -57,9 +59,9 @@
                 </p>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
                 </div>
 
                 <div class="tab-contents active-tab" id="skills">
@@ -123,59 +125,75 @@
  </div>
 
  <!-- ---------portfolio-------------- -->
-  <div id="portfolio">
+<div id="portfolio">
     <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
+
             <div class="work">
                 <img src="images/Gemini_Generated_Image_1.png">
                 <div class="layer">
                     <h3>Social Media App</h3>
-                    <p>The app connects you to talented people around the world.
-                        Download it from play store.
-                    </p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
-                <div class="layer">
-                    <h3>Growth Strategy Work</h3>
-                    <p>Boosted brand reach 120% through data-driven advertising
-                    </p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
-                <div class="layer">
-                    <h3>Musical Work</h3>
-                    <p>Recorded professional lead and bass guitar for studio projects.
-                    </p>
+                    <p>The app connects you to talented people around the world. Download it from play store.</p>
                     <a href="#"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
+
             <div class="work">
                 <img src="images/gemini image 2.jpg">
+                <div class="layer">
+                    <h3>Musical Work</h3>
+                    <p>Recorded professional lead and bass guitar for studio projects.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
             </div>
+
             <div class="work">
                 <img src="images/gemini image 3.jpg">
+                <div class="layer">
+                    <h3>Growth Strategy Work</h3>
+                    <p>Boosted brand reach 120% through data-driven advertising.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- --------------Contact-------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>eddiedee481@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0205486710</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/18jwWe67ij/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/edith-dziwornu-92b174347?utm_source=share_via&utm_content=profile&utm_medium=member_ios"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://snapchat.com/t/T3Y7slEV"><i class="fa-brands fa-snapchat"></i></a>
+                    <a href="https://www.instagram.com/demma_crushga?igsh=MW9pa3diYmN6OXlzYg%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Edith Dziwornu Official CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
-  </div>
+    <div class="copyright">
+        <p>Copyright © Edith. Made with <i class="fa-solid fa-heart"></i> by Edith.Inc</p>
+    </div>
+ </div>
 
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-</script>
+ <script src="script.js"></script>
     
 </body>
 </html>
