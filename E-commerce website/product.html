@@ -8,31 +8,32 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css">
 </head>
 
 <body>
 
     <!-- ------header------ -->
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="images/logo.png" width="125px">
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Account</a></li>
-                    </ul>
-                </nav>
-                <img src="images/cart.png" width="30px" height="30px">
-                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
             </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
+    </div>
 
     <div class="small-container">
         <div class="row row-2">
@@ -201,9 +202,9 @@
             <span>4</span>
             <span> &#8594; </span>
         </div>
-    </div> 
+    </div>
 
-   <!-- --------Footer--------- -->
+    <!-- --------Footer--------- -->
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -249,4 +250,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
