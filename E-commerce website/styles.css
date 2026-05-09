@@ -496,6 +496,7 @@ th:last-child{
     position: absolute;
     top: 130px;
     transition: transform 1s;
+    width: 100%;
 }
 
 form input{
@@ -518,11 +519,13 @@ form .btn:focus{
 }
 
 #LoginForm{
-    left: -300px;
+    left: 0px;
+    transform: translateX(0px);
 }
 
 #RegForm{
     left: 0;
+    transform: translateX(300px);
 }
 
 form a{
@@ -535,7 +538,7 @@ form a{
     background: #ff523b;
     height: 3px;
     margin-top: 8px;
-    transform: translateX(100px);
+    transform: translateX(0px);
     transition: transform 1s;
 }
 
