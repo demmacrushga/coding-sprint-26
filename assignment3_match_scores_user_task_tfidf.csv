@@ -1,0 +1,31 @@
+user_id,task_id,tfidf_score,user_keywords,task_keywords
+U1,T1,0.117609,python nlp; tensorflow pandas; pandas; data cleaning; pandas data,using python; using; train model; train; text train
+U1,T2,0.0,tensorflow pandas; tensorflow; python nlp; pandas; pandas data,sales; sales reports; reports; monthly sales; excel monthly
+U1,T3,0.0,tensorflow; tensorflow pandas; nlp; nlp tensorflow; pandas data,ui components; ui; style; style css; responsive ui
+U1,T4,0.0,tensorflow; tensorflow pandas; python nlp; python; nlp,using docker; using; rest; rest api; flask rest
+U1,T5,0.048185,tensorflow pandas; tensorflow; pandas data; python; python nlp,visualizations survey; visualizations; survey data; statistical analysis; survey
+U1,T6,0.092321,tensorflow pandas; tensorflow; pandas data; nlp tensorflow; python,using pandas; using; training model; training; preprocess data
+U2,T1,0.0,sql; sql excel; excel; powerpoint; reporting,using python; using; train model; train; text train
+U2,T2,0.061231,sql excel; sql; powerpoint; reporting; reporting powerpoint,sales reports; create dashboard; sales; reports; monthly sales
+U2,T3,0.0,reporting powerpoint; reporting; sql; sql excel; excel reporting,ui components; ui; style css; style; responsive
+U2,T4,0.0,sql; sql excel; reporting powerpoint; reporting; excel,using docker; using; rest; rest api; api aws
+U2,T5,0.0,reporting powerpoint; reporting; excel reporting; excel; sql,visualizations survey; visualizations; survey data; survey; statistical analysis
+U2,T6,0.0,reporting; reporting powerpoint; sql; sql excel; powerpoint,using pandas; using; training model; training; preprocess
+U3,T1,0.0,react; react css; css; javascript; html,using python; using; train model; train; text train
+U3,T2,0.0,react; react css; html; css; javascript,sales reports; sales; reports; monthly sales; monthly
+U3,T3,0.119137,react css; javascript react; css html; javascript; html,ui components; ui; style css; style; responsive ui
+U3,T4,0.0,javascript; javascript react; react; react css; html,using docker; using; rest api; rest; flask
+U3,T5,0.0,react css; react; css html; html; javascript,visualizations survey; visualizations; survey data; survey; statistical analysis
+U3,T6,0.0,javascript; javascript react; react; react css; css html,using pandas; using; training model; training; preprocess
+U4,T1,0.040349,python flask; docker; flask api; api; docker aws,using python; using; train model; train; text train
+U4,T2,0.0,python flask; docker aws; flask api; python; aws,sales reports; sales; reports; monthly sales; create
+U4,T3,0.0,api docker; aws; flask; flask api; python flask,ui components; ui; style css; style; responsive ui
+U4,T4,0.230096,python flask; python; api docker; flask api; docker aws,using docker; using; rest api; rest; flask rest
+U4,T5,0.0,flask; flask api; python flask; python; api,visualizations survey; visualizations; survey data; survey; statistical analysis
+U4,T6,0.0,python flask; python; docker; flask api; docker aws,using pandas; using; training model; training; preprocess
+U5,T1,0.0,visualization; statistics ggplot2; ggplot2; ggplot2 data; data,using python; using; text; train model; train
+U5,T2,0.0,visualization; statistics ggplot2; statistics; ggplot2; ggplot2 data,sales; sales reports; create dashboard; create; reports
+U5,T3,0.0,visualization; ggplot2; statistics; statistics ggplot2; data,ui components; ui; style css; style; components react
+U5,T4,0.0,visualization; statistics ggplot2; ggplot2 data; statistics; data visualization,using docker; using; rest; rest api; api aws
+U5,T5,0.061231,visualization; ggplot2 data; statistics ggplot2; statistics; ggplot2,visualizations survey; visualizations; survey data; survey; statistical
+U5,T6,0.056122,visualization; statistics ggplot2; statistics; data visualization; ggplot2 data,using pandas; using; training model; clean preprocess; training

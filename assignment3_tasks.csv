@@ -1,0 +1,7 @@
+task_id,description
+T1,Build an NLP pipeline using Python and TensorFlow to preprocess text and train a model
+T2,Create a dashboard with Excel to show monthly sales reports
+T3,Implement responsive UI components in React and style them with CSS
+T4,Deploy a Flask REST API to AWS using Docker
+T5,Perform statistical analysis and visualizations in R for survey data
+T6,Clean and preprocess data using pandas before training a model
