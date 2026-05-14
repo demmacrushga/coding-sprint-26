@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 1. Meta tags always go first -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio Website</title>
+
+    <!-- 2. Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- 3. The Big Poppins Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- 4. Your Styles (Always Last) -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9624737e09.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/46543913-designstyle-birthday-m.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Software Engineer</p>
+            <h1>
+                Hi, I am <span>Edith</span> From Ghana
+            </h1>
+        </div>
+    </div>
+</div>
+<!-- ----------------about------------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/snap selfie hostel.jpeg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I’m a full stack developer who believes that code should be as harmonious as a well-tuned guitar.
+                    As a Computer Science student at KNUST and an avid electric guitar player,
+                    I bring a mix of technical discipline and creative flair to every project I touch.
+                    From learning Object-Oriented Programming to crafting modern web layouts,
+                    I love the challenge of turning complex problems into elegant solutions.
+                    When I’m not debugging Javascript or refining CSS, you can find me exploring the latest in the tech field 
+                    or practicing on my Fender Squier guitar.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Full Stack Mobile App/Website Developer</span><br>Designing Websites and Applications</li>
+                        <li><span>Lead Guitarist</span><br>Playing songs for entertainment</li>
+                        <li><span>Social media creator</span><br>Creating content and engaging followers</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2025 - Current</span><br>Self-taught full stack developer</li>
+                        <li><span>2025 - Currrent</span><br>Lead guitarist at CUC Church Choir</li>
+                        <li><span>2023 - Current</span><br>Creator at Snapchat</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019</span><br>Prince and Princess Academy</li>
+                        <li><span>2022</span><br>Archbishop Porter Girls' Secondary School</li>
+                        <li><span>2025</span><br>Kwame Nkrumah University of Science and Technology</li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>
+<!-- ------------services------------ -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Full-Stack Software Engineer</h2>
+                <p>Building high-performance, cross-platform applications 
+                   with robust backends and seamless UI/UX
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-guitar"></i>
+                <h2>Session Musician</h2>
+                <p>
+                    Providing studio-grade lead and bass guitar for professional musical projects.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-snapchat"></i>
+                <h2>Digital Growth Strategist</h2>
+                <p>
+                    Scaling brands through data-driven advertising
+                    and strategic social management.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+ </div>
+
+ <!-- ---------portfolio-------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="images/Gemini_Generated_Image_1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/gemini image 2.jpg">
+                <div class="layer">
+                    <h3>Musical Work</h3>
+                    <p>Recorded professional lead and bass guitar for studio projects.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/gemini image 3.jpg">
+                <div class="layer">
+                    <h3>Growth Strategy Work</h3>
+                    <p>Boosted brand reach 120% through data-driven advertising.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- --------------Contact-------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>eddiedee481@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0205486710</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/18jwWe67ij/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/edith-dziwornu-92b174347?utm_source=share_via&utm_content=profile&utm_medium=member_ios"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://snapchat.com/t/T3Y7slEV"><i class="fa-brands fa-snapchat"></i></a>
+                    <a href="https://www.instagram.com/demma_crushga?igsh=MW9pa3diYmN6OXlzYg%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Edith Dziwornu Official CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Edith. Made with <i class="fa-solid fa-heart"></i> by Edith.Inc</p>
+    </div>
+ </div>
+
+ <script src="script.js"></script>
+    
+</body>
+</html>
