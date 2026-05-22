@@ -33,3 +33,28 @@
     width: 30px;
     margin-left: 10px;
 }
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    margin-bottom: 25px;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+}
+
